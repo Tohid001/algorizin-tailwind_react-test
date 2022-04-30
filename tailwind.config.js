@@ -1,6 +1,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    screens: {
+      tab: "800px",
+
+      large: "1440px",
+    },
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
@@ -27,13 +32,6 @@ module.exports = {
         "success-2": "#E8F7EE",
         "success-3": "#82DDA5",
       },
-    },
-    screens: {
-      mobile: "390px",
-
-      tab: "800px",
-
-      large: "1440px",
     },
   },
   plugins: [],

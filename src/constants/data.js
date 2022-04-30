@@ -1,28 +1,28 @@
-// import images from "./images";
+import { icons } from "../components";
+
+const { DashIcon, InventoryIcon, SettingsIcon, DocumentsIcon } = icons;
 
 const navItems = [
   {
-    title: "Profile",
-    // icon:<CgProfile/>
+    title: "Dashboard",
+    icon: <DashIcon />,
+    route: "/",
   },
   {
-    title: "Education",
-    // icon:<GiGraduateCap/>
+    title: "Inventory",
+    icon: <InventoryIcon />,
+    route: "/inventory",
   },
   {
-    title: "Skills",
-    // icon:<IoStatsChart/>
+    title: "Documents",
+    icon: <DocumentsIcon />,
+    route: "/documents",
   },
   {
-    title: "Projects",
-    // icon:<GrProjects/>
+    title: "Settings",
+    icon: <SettingsIcon />,
+    route: "/settings",
   },
-  {
-    title: "Experiments",
-    // icon:
-  },
-  { title: "Contact" },
-  // icon:}
 ];
 
 export default { navItems };
