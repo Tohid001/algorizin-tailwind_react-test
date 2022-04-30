@@ -2,9 +2,11 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      tab: "800px",
+      mobileRange: { max: "799px" },
+      tabRange: { min: "800px", max: "1439px" },
+      fromTab: "800px",
 
-      large: "1440px",
+      fromLarge: "1440px",
     },
     extend: {
       fontFamily: {
@@ -31,6 +33,11 @@ module.exports = {
         "success-1": "#F1FDF6",
         "success-2": "#E8F7EE",
         "success-3": "#82DDA5",
+      },
+      boxShadow: {
+        menuActive:
+          "0px 3px 1px rgba(20, 40, 82, 0.08), 0px 24px 24px rgba(20, 40, 82, 0.04)",
+        navContainer: "0px -4px 2px rgba(0, 0, 0, 0.09)",
       },
     },
   },

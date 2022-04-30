@@ -18,6 +18,13 @@
   ul {
     list-style: none;
   }
+  a {
+    /* display: block; */
+    all: unset;
+  }
+  body {
+    @apply bg-neutral-2;
+  }
 }
 
 @layer components {
