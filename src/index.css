@@ -18,7 +18,8 @@
   ul {
     list-style: none;
   }
-  a {
+  a,
+  input {
     /* display: block; */
     all: unset;
   }

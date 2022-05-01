@@ -4,10 +4,11 @@ import { Header, Navbar } from "../../components";
 
 function Layout() {
   return (
-    <>
-      <div>Layout</div>
+    <div className="flex flex-wrap">
+      <Header />
+      <Navbar />
       <Outlet />
-    </>
+    </div>
   );
 }
 
