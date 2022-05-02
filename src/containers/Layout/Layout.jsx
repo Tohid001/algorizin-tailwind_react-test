@@ -7,10 +7,10 @@ function Layout() {
     <div className="flex flex-col h-screen">
       <Header />
       <div className="flex flex-1 mobileRange:flex-col">
-        <div className="mobileRange:order-2">
+        <div className="mobileRange:order-2 bg-cyan-300 ">
           <Navbar />
         </div>
-        <div className="flex-1">
+        <div className="flex-1 bg-green-400 overflow-auto">
           <Outlet />
         </div>
       </div>
@@ -19,3 +19,16 @@ function Layout() {
 }
 
 export default Layout;
+
+// `<div className="flex flex-col h-screen">
+//       <Header />
+//       <div className="flex flex-1 mobileRange:flex-col">
+//         <div className="mobileRange:order-2 bg-cyan-300 ">
+//           <Navbar />
+//         </div>
+//         <div className="flex-1 bg-green-400 overflow-auto">
+//           <Outlet />
+
+//         </div>
+//       </div>
+//     </div>
