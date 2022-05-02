@@ -6,7 +6,7 @@ const { DownIcon, BellIcon } = icons;
 
 function Header() {
   return (
-    <div className="bg-white max-w-full text-neutral-9 flex basis-full ">
+    <div className="bg-white text-neutral-9 flex">
       <div>
         <p>Lorem</p>
         <span>

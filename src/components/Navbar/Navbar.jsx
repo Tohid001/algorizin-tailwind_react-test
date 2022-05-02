@@ -6,7 +6,7 @@ const { navItems } = data;
 
 function Navbar() {
   return (
-    <nav className=" fixed left-0 right-0 bottom-0 flex  mobileRange:shadow-navContainer bg-pink-400 ">
+    <nav className="flex  mobileRange:shadow-navContainer  ">
       // mobileRange:bg-white
       <ul>
         {/* {navItems.map(({ title, route, icon }, index) => {
