@@ -4,7 +4,7 @@ import { Header, Navbar } from "../../components";
 
 function Layout() {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col" style={{ height: window.innerHeight }}>
       <Header />
       <div className="flex flex-1 mobileRange:flex-col">
         <div className="mobileRange:order-2 bg-cyan-300 ">
