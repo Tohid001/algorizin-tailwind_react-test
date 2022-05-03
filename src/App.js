@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import vhAdjustment from "./vhAdjustment.js";
 
 import {
   Layout,
@@ -10,6 +11,7 @@ import {
 } from "./containers";
 
 function App() {
+  useEffect(vhAdjustment, []);
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
