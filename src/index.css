@@ -36,7 +36,7 @@
   } */
 
   .option {
-    @apply text-sm p-2 w-fit;
+    @apply text-sm p-2 pl-[13px] w-fit;
   }
 }
 

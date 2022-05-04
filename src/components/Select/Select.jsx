@@ -3,8 +3,8 @@ import { icons } from "../../components";
 
 const { DownIcon } = icons;
 
-function Select() {
-  const [selected, setSelected] = useState("starbucks");
+function Select({ options, profile }) {
+  const [selected, setSelected] = useState(options[0]);
   const [activeOptions, setActiveOptions] = useState(false);
 
   const handleChange = (e) => {
@@ -13,14 +13,16 @@ function Select() {
   };
 
   return (
-    <div>
+    <>
       <div
-        className="relative flex items-center option cursor-pointer"
+        className={`${
+          profile && "p-0 gap-1"
+        } "relative flex items-center option cursor-pointer"`}
         onClick={() => {
           setActiveOptions(!activeOptions);
         }}
       >
-        <div>{selected}</div>
+        <div className="">{selected}</div>
         <span className="text-2xl pointer-events-none">
           <DownIcon />
         </span>
@@ -31,36 +33,26 @@ function Select() {
               : " absolute left-0 -bottom-20 bg-slate-400"
           } `}
         >
-          <div className="option cursor-pointer">
-            <input
-              type="radio"
-              value="Starbucks"
-              checked={selected.toLowerCase() == "Tutorials".toLowerCase()}
-              id="Starbucks"
-              name="category"
-              onChange={handleChange}
-            />
-            <label className="cursor-pointer" htmlFor="Starbucks">
-              Starbucks
-            </label>
-          </div>
-
-          <div className="option cursor-pointer">
-            <input
-              type="radio"
-              value="lorem"
-              checked={selected.toLowerCase() == "Tutorials".toLowerCase()}
-              id="lorem"
-              name="category"
-              onChange={handleChange}
-            />
-            <label className="cursor-pointer" htmlFor="lorem">
-              lorem
-            </label>
-          </div>
+          {options.map((item, i) => {
+            return (
+              <div className="option cursor-pointer">
+                <input
+                  type="radio"
+                  value={item}
+                  checked={selected.toLowerCase() == item.toLowerCase()}
+                  id={item}
+                  name="category"
+                  onChange={handleChange}
+                />
+                <label className="cursor-pointer" htmlFor={item}>
+                  {item}
+                </label>
+              </div>
+            );
+          })}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
