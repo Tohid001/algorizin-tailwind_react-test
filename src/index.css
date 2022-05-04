@@ -29,15 +29,23 @@
 }
 
 @layer components {
-  @media screen(tab) {
+  /* @media screen(tab) {
     .text {
       @apply mt-4 text-sm leading-6 col-start-1 col-span-2 mt-6 row-start-4 col-span-1 dark:text-slate-400;
     }
+  } */
+
+  .option {
+    @apply text-sm p-2 w-fit;
   }
 }
 
 @layer utilities {
-  .hello {
-    color: red;
+  .select {
+    all: unset;
+    /* width: fit-content; */
+  }
+  .option {
+    width: fit-content;
   }
 }
