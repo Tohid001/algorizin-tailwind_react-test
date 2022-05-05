@@ -2,8 +2,8 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      mobileRange: { max: "800px" },
-      tabRange: { min: "800px", max: "1439px" },
+      mobileRange: { max: "799.98px" },
+      tabRange: { min: "800px", max: "1439.98px" },
       fromTab: "800px",
 
       fromLarge: "1440px",

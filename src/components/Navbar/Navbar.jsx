@@ -5,7 +5,6 @@ import { data } from "../../constants";
 const { navItems } = data;
 
 function Navbar() {
-  const [active, setActive] = useState(false);
   return (
     <nav className="p-4 fromTab:p-6 mobileRange:bg-white  mobileRange:shadow-navContainer">
       <ul className="flex fromTab:flex-col mobileRange:justify-between fromTab:gap-2 fromLarge:w-[188px]">
