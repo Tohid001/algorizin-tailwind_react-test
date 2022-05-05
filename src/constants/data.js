@@ -25,4 +25,24 @@ const navItems = [
   },
 ];
 
-export default { navItems };
+const dashBoardData = [
+  {
+    title: "Summary",
+    icon: <InventoryIcon />,
+    text_1: "$2,12,200.10",
+    text_2: "100",
+  },
+  {
+    title: "Total out of stock",
+    icon: <InventoryIcon />,
+    text_1: "30",
+  },
+  {
+    title: "Order made",
+    icon: <InventoryIcon />,
+    text_1: "$2030.10",
+    text_2: "10",
+  },
+];
+
+export default { navItems, dashBoardData };

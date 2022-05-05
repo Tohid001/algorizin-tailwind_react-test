@@ -24,7 +24,7 @@
     all: unset;
   }
   body {
-    @apply bg-neutral-2;
+    @apply bg-neutral-2-bg;
   }
 }
 

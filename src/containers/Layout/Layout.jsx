@@ -7,10 +7,8 @@ function Layout() {
     <div id="container" className="flex flex-col">
       <Header />
       <div className="flex flex-1 mobileRange:flex-col overflow-hidden">
-        <div className="mobileRange:order-2">
-          <Navbar />
-        </div>
-        <div className="flex-1 bg-green-400 overflow-auto ">
+        <Navbar />
+        <div className="flex-1 overflow-auto ">
           <Outlet />
         </div>
       </div>

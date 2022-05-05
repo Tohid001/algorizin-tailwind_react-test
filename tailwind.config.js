@@ -24,6 +24,7 @@ module.exports = {
         neutral: "#6B6C72",
         "neutral-1": "#F9F9FA",
         "neutral-2": "#E5E5E6",
+        "neutral-2-bg": "#F2F2F3",
         "neutral-3": "#D2D2D5",
         "neutral-5": "#B2B2B6",
         "neutral-7": "#6B6C72",
@@ -38,6 +39,8 @@ module.exports = {
         menuActive:
           "0px 3px 1px rgba(20, 40, 82, 0.08), 0px 24px 24px rgba(20, 40, 82, 0.04)",
         navContainer: "0px -4px 2px rgba(0, 0, 0, 0.09)",
+        dashCard:
+          "0px 5px 4px rgba(20, 40, 82, 0.08), 0px 24px 24px rgba(20, 40, 82, 0.04)",
       },
     },
   },
