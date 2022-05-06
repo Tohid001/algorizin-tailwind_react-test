@@ -16,7 +16,7 @@ function Inventory() {
           </div>
           <table className="w-full">
             <thead className="  bg-warning-1   text-[13px] leading-[20px] text-neutral-9 font-medium w-full  ">
-              <th className="pcell py-2.5 pl-0 hidden fromTab:table-cell">
+              <th className="pl-[19px] hidden fromTab:table-cell ">
                 <Checkbox />
               </th>
               <th className="pcell py-2.5 hidden fromTab:table-cell">
@@ -64,7 +64,7 @@ function Inventory() {
                 ) => {
                   return (
                     <tr key={i} className="text-neutral-9 hover:bg-primary-1">
-                      <td className="pcell hidden fromTab:table-cell">
+                      <td className="pl-[19px] hidden fromTab:table-cell text-center">
                         <Checkbox />
                       </td>
                       <td className="pcell text-left hidden fromTab:table-cell">

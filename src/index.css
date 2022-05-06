@@ -42,7 +42,7 @@
   }
 
   .pcell {
-    @apply py-4 pr-4 pl-2;
+    @apply py-5 pr-4 pl-2;
   }
 }
 
