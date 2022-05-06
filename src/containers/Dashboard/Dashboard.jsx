@@ -18,9 +18,9 @@ function Dashboard() {
               <div className="flex  gap-2">
                 <span
                   className={`block rounded-full grid place-items-center w-12 h-12 text-2xl leading-[0px] ${
-                    i == 0
+                    i === 0
                       ? "bg-primary-1 text-primary"
-                      : i == 2
+                      : i === 2
                       ? "bg-error-1 text-error"
                       : "bg-warning-1 text-warning"
                   }`}

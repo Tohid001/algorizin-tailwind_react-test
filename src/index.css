@@ -19,10 +19,12 @@
     list-style: none;
   }
   a,
-  input {
+  input[type="text"],
+  input[type="radio"] {
     /* display: block; */
     all: unset;
   }
+
   body {
     @apply bg-neutral-2-bg;
   }
@@ -37,6 +39,10 @@
 
   .option {
     @apply text-sm p-2 pl-[13px] w-fit;
+  }
+
+  .pcell {
+    @apply py-4 pr-4 pl-2;
   }
 }
 

@@ -5,6 +5,8 @@ import SettingsIcon from "./SettingsIcon.jsx";
 import DownIcon from "./DownIcon.jsx";
 import BellIcon from "./BellIcon.jsx";
 import SearchIcon from "./SearchIcon.jsx";
+import ArrowDown from "./ArrowDown.jsx";
+import ArrowTopBottom from "./ArrowTopBottom.jsx";
 
 export default {
   DashIcon,
@@ -14,4 +16,6 @@ export default {
   DownIcon,
   BellIcon,
   SearchIcon,
+  ArrowDown,
+  ArrowTopBottom,
 };
