@@ -118,7 +118,7 @@ const inventoryData = [
     status: { text: "Allright", green: true },
     quantity: "200/300",
     unitPrice: "$10",
-    Amount: "$10000.00",
+    Amount: "$1000.00",
   },
   {
     date: "6 May 2022",
