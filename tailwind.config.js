@@ -41,6 +41,7 @@ module.exports = {
         navContainer: "0px -4px 2px rgba(0, 0, 0, 0.09)",
         dashCard:
           "0px 5px 4px rgba(20, 40, 82, 0.08), 0px 24px 24px rgba(20, 40, 82, 0.04)",
+        paginate: "0px 3px 5px rgba(0, 0, 0, 0.07)",
       },
     },
   },

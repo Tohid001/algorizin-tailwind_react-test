@@ -7,6 +7,7 @@ import BellIcon from "./BellIcon.jsx";
 import SearchIcon from "./SearchIcon.jsx";
 import ArrowDown from "./ArrowDown.jsx";
 import ArrowTopBottom from "./ArrowTopBottom.jsx";
+import PaginateIcon from "./PaginateIcon.jsx";
 
 export default {
   DashIcon,
@@ -18,4 +19,5 @@ export default {
   SearchIcon,
   ArrowDown,
   ArrowTopBottom,
+  PaginateIcon,
 };

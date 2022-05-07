@@ -16,7 +16,7 @@ function SearchBox({ isheader = true }) {
       <input
         type="text"
         placeholder="Search"
-        className="placeholder:text-neutral-8 focus:outline-none w-full"
+        className="placeholder:text-neutral-8 focus:outline-none w-full "
       />
     </div>
   );

@@ -44,6 +44,10 @@
   .pcell {
     @apply py-5 pr-4 pl-2;
   }
+
+  .paginate {
+    @apply text-neutral-8 py-1 px-2 rounded border-[1px] border-neutral-5 flex  items-center shadow-paginate;
+  }
 }
 
 @layer utilities {

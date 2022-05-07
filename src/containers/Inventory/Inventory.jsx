@@ -1,22 +1,28 @@
 import React from "react";
 import { data } from "../../constants";
-import { ContentHeader, SearchBox, Checkbox, icons } from "../../components";
+import {
+  ContentHeader,
+  SearchBox,
+  Checkbox,
+  icons,
+  Paginate,
+} from "../../components";
 
 const { inventoryData } = data;
-const { ArrowDown, ArrowTopBottom } = icons;
+const { ArrowDown, ArrowTopBottom, PaginateIcon } = icons;
 
 function Inventory() {
   return (
     <div>
       <ContentHeader title="Inventory" />
       <div className="p-2 fromLarge:p-6 fromTab:pl-6 fromTab:pr-10 fromTab:pt-11  ">
-        <div className="shadow-dashCard rounded bg-white ">
-          <div className="px-4 py-6 ">
+        <div className="shadow-dashCard rounded bg-white pt-6 pb-10 flex flex-col gap-6">
+          <div className="px-4 ">
             <SearchBox isheader={false} />
           </div>
           <table className="w-full">
             <thead className="  bg-warning-1   text-[13px] leading-[20px] text-neutral-9 font-medium w-full  ">
-              <th className="pl-[19px] hidden fromTab:table-cell ">
+              <th className="px-[19px] hidden fromTab:table-cell text-center ">
                 <Checkbox />
               </th>
               <th className="pcell py-2.5 hidden fromTab:table-cell">
@@ -64,14 +70,14 @@ function Inventory() {
                 ) => {
                   return (
                     <tr key={i} className="text-neutral-9 hover:bg-primary-1">
-                      <td className="pl-[19px] hidden fromTab:table-cell text-center">
+                      <td className="px-[19px] hidden fromTab:table-cell text-center">
                         <Checkbox />
                       </td>
                       <td className="pcell text-left hidden fromTab:table-cell">
                         {date}
                       </td>
                       <td className="text-left pcell">{title}</td>
-                      <td className="pcell text-left hidden fromLarge:table-cell">
+                      <td className="pcell text-left hidden fromLarge:table-cell w-fit    ">
                         {details || "-"}
                       </td>
                       <td className="pcell text-left">
@@ -107,6 +113,7 @@ function Inventory() {
               )}
             </tbody>
           </table>
+          <Paginate />
         </div>
       </div>
     </div>

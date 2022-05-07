@@ -5,5 +5,15 @@ import SearchBox from "./Search/SearchBox";
 import Select from "./Select/Select.jsx";
 import ContentHeader from "./Content header/Contentheader.jsx";
 import Checkbox from "../components/Checkbox/Checkbox.jsx";
+import Paginate from "./Paginate/Paginate";
 
-export { icons, Navbar, Header, SearchBox, Select, ContentHeader, Checkbox };
+export {
+  icons,
+  Navbar,
+  Header,
+  SearchBox,
+  Select,
+  ContentHeader,
+  Checkbox,
+  Paginate,
+};
