@@ -2,9 +2,11 @@ import React from "react";
 import { icons } from "../index";
 
 const { PaginateIcon } = icons;
-function CommonContainer({ content, navigate, gap }) {
+function CommonContainer({ counter, content, navigate, gap }) {
   return (
-    <div className={`paginate ${gap}`}>
+    <div
+      className={`paginate ${gap} ${!counter && "first:mobileRange:hidden"}`}
+    >
       {content && <p className=" text-[13px] leading-[20px]">{content}</p>}
       <span
         className={`text-2xl ${
